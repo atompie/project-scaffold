@@ -1,0 +1,7 @@
+../src/Example/Repository:
+  Allow:
+    - Example.Repository
+    - AtomPie.Boundary.Core
+  Verbose: No
+  ExtendedReport: No
+  JsonReport: No

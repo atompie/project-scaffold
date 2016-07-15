@@ -1,0 +1,12 @@
+../src/Example:
+  Allow:
+    - Example
+    - stdClass # php
+    - parent
+    - Exception
+    - AtomPie\Boundary # packagist
+    - AtomPie\Core\Annotation\Tag # packagist
+    - AtomPie\AnnotationTag #packagist
+  Verbose: No
+  ExtendedReport: No
+  JsonReport: No

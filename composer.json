@@ -1,0 +1,25 @@
+{
+  "name": "atompie/project-scaffold",
+  "description": "AtomPie framework project scaffold",
+  "minimum-stability": "dev",
+  "license": "GPL",
+  "authors": [
+    {
+      "name": "Risto Kowaczewski"
+    }
+  ],
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/atompie/framework.git"
+    }
+  ],
+  "require": {
+    "ri100/workshop": "dev-master"
+  },
+  "autoload": {
+    "psr-4": {
+      "Example\\": "src\\Example"
+    }
+  }
+}
