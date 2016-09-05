@@ -67,5 +67,7 @@ Vagrant.configure(2) do |config|
   config.vm.provision "shell", inline: <<-SHELL
     sudo apt-get update
     sudo apt-get install -y apache2 php5 libapache2-mod-php5 php5-mcrypt php5-curl
+    sudo a2enmod rewrite
+    sudo service apache2 restart
   SHELL
 end

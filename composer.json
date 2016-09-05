@@ -11,11 +11,11 @@
   "repositories": [
     {
       "type": "vcs",
-      "url": "https://github.com/atompie/framework.git"
+      "url": "https://ri100@bitbucket.org/ri100/php.workshop.git"
     }
   ],
   "require": {
-    "ri100/workshop": "dev-master"
+    "ri100/workshop": "endpoints-context-dev"
   },
   "autoload": {
     "psr-4": {

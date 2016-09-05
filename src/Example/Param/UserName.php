@@ -1,5 +1,5 @@
 <?php
-namespace Example\EndPoint\Param;
+namespace Example\Param;
 
 /**
  * 

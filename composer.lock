@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "b61185a47b90825d7ad1823b487c1cc9",
-    "content-hash": "3bdf879b518dc7b285673f56c94f74c1",
+    "hash": "20ab4f549ca26382cc1764afdda67eea",
+    "content-hash": "5933a83074313c60b21b155821c6e3a9",
     "packages": [
         {
             "name": "baryshev/tree-route",
@@ -53,23 +53,23 @@
         },
         {
             "name": "mustache/mustache",
-            "version": "v2.10.0",
+            "version": "v2.11.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bobthecow/mustache.php.git",
-                "reference": "0bb2f76e2f34a8864a32be34c4ec66274d76c05e"
+                "reference": "a3f6d55996dd28b58f3a909d474189a3c1aa693f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bobthecow/mustache.php/zipball/0bb2f76e2f34a8864a32be34c4ec66274d76c05e",
-                "reference": "0bb2f76e2f34a8864a32be34c4ec66274d76c05e",
+                "url": "https://api.github.com/repos/bobthecow/mustache.php/zipball/a3f6d55996dd28b58f3a909d474189a3c1aa693f",
+                "reference": "a3f6d55996dd28b58f3a909d474189a3c1aa693f",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.2.4"
             },
             "require-dev": {
-                "fabpot/php-cs-fixer": "~1.6",
+                "friendsofphp/php-cs-fixer": "~1.11",
                 "phpunit/phpunit": "~3.7|~4.0|~5.0"
             },
             "type": "library",
@@ -95,7 +95,7 @@
                 "mustache",
                 "templating"
             ],
-            "time": "2016-02-27 19:22:46"
+            "time": "2016-07-31 06:18:27"
         },
         {
             "name": "ri100/generi",
@@ -138,17 +138,11 @@
         },
         {
             "name": "ri100/workshop",
-            "version": "dev-master",
+            "version": "dev-endpoints-context",
             "source": {
                 "type": "git",
-                "url": "https://github.com/atompie/framework.git",
-                "reference": "b5154677f64575b5e162a775fae5cf66746f6ac3"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/atompie/framework/zipball/b5154677f64575b5e162a775fae5cf66746f6ac3",
-                "reference": "b5154677f64575b5e162a775fae5cf66746f6ac3",
-                "shasum": ""
+                "url": "https://ri100@bitbucket.org/ri100/php.workshop.git",
+                "reference": "529f76bb2ebe603e4986b60c2eb175f527aa2996"
             },
             "require": {
                 "baryshev/tree-route": "dev-master",
@@ -163,12 +157,21 @@
             "require-dev": {
                 "behat/behat": "3.0.15@stable",
                 "mockery/mockery": "0.9.4@stable",
-                "phpunit/phpunit": "~5.4.0@stable"
+                "phpunit/phpunit": "~5.5.0@stable"
             },
             "type": "library",
             "autoload": {
+                "files": [
+                    "src/AtomPie/I18n/i18n.functions.php"
+                ],
+                "classmap": [
+                    "src/AtomPie/Web/Boundary/WebInterface.package.php",
+                    "src/AtomPie/Web/Boundary/UrlInterface.package.php",
+                    "src/AtomPie/Boundary/Core/Dispatch/DispatchManifestInterface.package.php",
+                    "src/AtomPie/Boundary/Core/Dispatch/EndPointInterface.package.php",
+                    "src/AtomPie/Boundary/Core/Dispatch/EventSpecImmutableInterface.package.php"
+                ],
                 "psr-0": {
-                    "Workshop": "src",
                     "AtomPie": "src"
                 }
             },
@@ -189,11 +192,14 @@
                 }
             ],
             "description": "Workshop for PHP. Framework for business apps.",
-            "support": {
-                "source": "https://github.com/atompie/framework/tree/master",
-                "issues": "https://github.com/atompie/framework/issues"
-            },
-            "time": "2016-07-15 11:26:15"
+            "keywords": [
+                "agnostic",
+                "event",
+                "framework",
+                "framework-agnostic",
+                "micro-framework"
+            ],
+            "time": "2016-08-19 14:40:31"
         }
     ],
     "packages-dev": [],
