@@ -22,13 +22,4 @@ class UserName
         return $this->sName;
     }
 
-    /**
-     * Injection factory method.
-     *
-     * @param $Name
-     * @return UserName
-     */
-    public static  function __build($Name) {
-        return new UserName($Name);
-    }
 }

@@ -15,7 +15,7 @@
     }
   ],
   "require": {
-    "ri100/workshop": "endpoints-context-dev"
+    "ri100/workshop": "master-dev"
   },
   "autoload": {
     "psr-4": {
