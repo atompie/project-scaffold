@@ -142,7 +142,7 @@
             "source": {
                 "type": "git",
                 "url": "https://ri100@bitbucket.org/ri100/php.workshop.git",
-                "reference": "3c42c665d812c48d51ecab8717022fa0b8e62e5f"
+                "reference": "297aaf0a70db6f394315c1769b67ef86f248d66c"
             },
             "require": {
                 "baryshev/tree-route": "dev-master",
@@ -199,7 +199,7 @@
                 "framework-agnostic",
                 "micro-framework"
             ],
-            "time": "2016-09-12 17:59:49"
+            "time": "2016-09-13 13:38:32"
         }
     ],
     "packages-dev": [],
