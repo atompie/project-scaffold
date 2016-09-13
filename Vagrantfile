@@ -37,7 +37,7 @@ Vagrant.configure(2) do |config|
   # the path on the host to the actual folder. The second argument is
   # the path on the guest to mount the folder. And the optional third
   # argument is a set of non-required options.
-  config.vm.synced_folder "/var/www", "/var/www/html"
+  # config.vm.synced_folder "/var/www", "/var/www/html"
 
   # Provider-specific configuration so you can fine-tune various
   # backing providers for Vagrant. These expose provider-specific options.
@@ -67,7 +67,15 @@ Vagrant.configure(2) do |config|
   config.vm.provision "shell", inline: <<-SHELL
     sudo apt-get update
     sudo apt-get install -y apache2 php5 libapache2-mod-php5 php5-mcrypt php5-curl
+
+    sudo rm -f /var/www/html/index.html
+    sudo ln -s /vagrant /var/www/html/vagrant
+
     sudo a2enmod rewrite
+
+    sudo cp /vagrant/.provisioning/scaffold.dev.conf /etc/apache2/sites-available
+    sudo ln -sfn /etc/apache2/sites-available/scaffold.dev.conf /etc/apache2/sites-enabled/scaffold.dev.conf
+
     sudo service apache2 restart
   SHELL
 end
