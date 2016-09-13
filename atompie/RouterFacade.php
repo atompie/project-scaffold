@@ -2,6 +2,10 @@
 
 use AtomPie\System\RouteManifest;
 
+class TreeRouterFacade extends \TreeRoute\Router implements \AtomPie\Boundary\System\IAddRoutes{
+
+}
+
 class RouterFacade
 {
 
@@ -17,7 +21,7 @@ class RouterFacade
 
     public function __construct()
     {
-        $this->oRouter = new \TreeRoute\Router();
+        $this->oRouter = new TreeRouterFacade();
     }
 
     /**
