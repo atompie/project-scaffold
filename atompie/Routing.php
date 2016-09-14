@@ -2,7 +2,6 @@
 use AtomPie\System\Router;
 
 $oRouter = new Router();
-$oRouter->get('/test/{Name}')->routeTo('Hello');
-$oRouter->get('')->routeTo('Hello');
+$oRouter->get('/Hello/{Name}')->routeTo('Hello');
 
 return $oRouter;
