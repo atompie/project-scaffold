@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "301b084b9b2b01881919396338b1b4a7",
-    "content-hash": "aa09e92ee44036f6c32b27fbef6d7b84",
+    "hash": "e09642b36ba117a14120662e1cd6adb4",
+    "content-hash": "ce566a0cf7a57da52896f06a1d4f78f0",
     "packages": [
         {
             "name": "baryshev/tree-route",
@@ -138,11 +138,11 @@
         },
         {
             "name": "ri100/workshop",
-            "version": "dev-master",
+            "version": "dev-extract-env-from-context",
             "source": {
                 "type": "git",
                 "url": "https://ri100@bitbucket.org/ri100/php.workshop.git",
-                "reference": "042e308a02e1497ddf95eab483d5109c0b6b79b9"
+                "reference": "c2fed9e25e47799d7795f61e00d926967020b09f"
             },
             "require": {
                 "baryshev/tree-route": "dev-master",
@@ -199,7 +199,7 @@
                 "framework-agnostic",
                 "micro-framework"
             ],
-            "time": "2016-09-13 19:54:53"
+            "time": "2016-09-14 13:23:52"
         }
     ],
     "packages-dev": [],

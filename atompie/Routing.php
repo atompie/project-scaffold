@@ -1,8 +1,8 @@
 <?php
-require  'RouterFacade.php';
+use AtomPie\System\Router;
 
-$oRouter = new RouterFacade();
+$oRouter = new Router();
 $oRouter->get('/test/{Name}')->routeTo('Hello');
-$oRouter->get('/test1/{id}')->routeTo('Hello');
+$oRouter->get('')->routeTo('Hello');
 
-$_REQUEST = $oRouter->dispatch($_SERVER);
+return $oRouter;

@@ -10,15 +10,12 @@ $sVendorDir = __DIR__ . '/../vendor/';
 /** @noinspection PhpIncludeInspection */
 $oLoader = require $sVendorDir . 'autoload.php';
 
-require 'Routing.php';
-
 $oConfig = new FrameworkConfig(
     realpath(__DIR__.'/EndPoint'),
     "Hello"
 );
 
-// Kernel
-
 $oKernel = new Kernel($oLoader);
-$oResponse = $oKernel->__boot($oConfig);
+$oKernel->setRouter(require 'Routing.php');
+$oResponse = $oKernel->boot($oConfig);
 $oResponse->send();
