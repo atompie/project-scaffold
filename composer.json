@@ -15,7 +15,7 @@
     }
   ],
   "require": {
-    "ri100/workshop": "dev-extract-env-from-context"
+    "ri100/workshop": "dev-master"
   },
   "autoload": {
     "psr-4": {
